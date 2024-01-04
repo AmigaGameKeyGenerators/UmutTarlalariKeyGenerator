@@ -3,5 +3,6 @@
         <file>Images/Information_icon.svg</file>
         <file>Images/umut_tarlalari_01.png</file>
         <file>Images/umut_tarlalari_02.png</file>
+        <file>Fonts/TopazNew.ttf</file>
     </qresource>
 </RCC>
