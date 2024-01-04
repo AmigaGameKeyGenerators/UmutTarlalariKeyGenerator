@@ -21,7 +21,7 @@ set(PROJECT_SOURCES
         AboutWindow.hpp
         AboutWindow.cpp
         AboutWindow.ui
-        Images.qrc
+        Resources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
