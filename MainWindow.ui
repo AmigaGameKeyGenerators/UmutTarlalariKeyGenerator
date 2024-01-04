@@ -58,11 +58,6 @@ QSpinBox {
       <height>71</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>54</pointsize>
-     </font>
-    </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
@@ -77,15 +72,10 @@ QSpinBox {
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>89</y>
+      <y>100</y>
       <width>231</width>
       <height>151</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>195</pointsize>
-     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(177, 122, 45)</string>
@@ -106,11 +96,6 @@ QSpinBox {
       <height>71</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>54</pointsize>
-     </font>
-    </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
@@ -129,11 +114,6 @@ QSpinBox {
       <width>91</width>
       <height>71</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>54</pointsize>
-     </font>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -167,7 +147,7 @@ QSpinBox {
      <string/>
     </property>
     <property name="icon">
-     <iconset resource="Images.qrc">
+     <iconset resource="Resources.qrc">
       <normaloff>:/Images/Information_icon.svg</normaloff>:/Images/Information_icon.svg</iconset>
     </property>
     <property name="iconSize">
@@ -183,7 +163,7 @@ QSpinBox {
   </widget>
  </widget>
  <resources>
-  <include location="Images.qrc"/>
+  <include location="Resources.qrc"/>
  </resources>
  <connections/>
 </ui>

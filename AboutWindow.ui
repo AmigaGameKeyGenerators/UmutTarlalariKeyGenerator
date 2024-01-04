@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>411</width>
-    <height>156</height>
+    <width>463</width>
+    <height>154</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Hakkında</string>
   </property>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="author">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -26,12 +26,12 @@
     <string>Volkan Orhan</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>20</y>
-     <width>241</width>
+     <width>261</width>
      <height>16</height>
     </rect>
    </property>
@@ -42,10 +42,10 @@
     </font>
    </property>
    <property name="text">
-    <string>Umut Tarlaları Şifre Oluşturucu</string>
+    <string>Umut Tarlalari Sifre Olusturucu</string>
    </property>
   </widget>
-  <widget class="QLabel" name="labelWeb">
+  <widget class="QLabel" name="projectPage">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -55,14 +55,14 @@
     </rect>
    </property>
    <property name="text">
-    <string>Proje Sayfası</string>
+    <string>Proje Sayfasi</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="logo">
    <property name="geometry">
     <rect>
-     <x>244</x>
-     <y>10</y>
+     <x>296</x>
+     <y>12</y>
      <width>151</width>
      <height>131</height>
     </rect>

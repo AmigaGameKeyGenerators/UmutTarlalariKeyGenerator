@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QDialog>
+#include <QFont>
 
 namespace Ui {
 class AboutWindow;
@@ -16,4 +17,5 @@ public:
 
 private:
     Ui::AboutWindow *ui;
+    QFont *topazFont, *topazFontBold;
 };

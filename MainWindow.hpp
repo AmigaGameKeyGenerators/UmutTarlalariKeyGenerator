@@ -29,4 +29,5 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QFont *topaz50Font, *topaz150Font;
 };
