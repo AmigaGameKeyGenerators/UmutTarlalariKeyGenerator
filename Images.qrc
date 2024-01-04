@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/Information_icon.svg</file>
+        <file>Images/umut_tarlalari_01.png</file>
+        <file>Images/umut_tarlalari_02.png</file>
+    </qresource>
+</RCC>
