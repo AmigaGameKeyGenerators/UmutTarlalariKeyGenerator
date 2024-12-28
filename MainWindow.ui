@@ -42,9 +42,9 @@ QSpinBox {
 	selection-color: rgb(45, 255, 19);
 	color: rgb(255, 233, 62);
     border: 2px solid blue;
-    border-radius: 10px;
-    padding-left: 0px;
-    padding-top: 0px;
+    border-radius: 35px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 </string>
   </property>
@@ -59,7 +59,7 @@ QSpinBox {
      </rect>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
     <property name="minimum">
      <number>1</number>
@@ -84,7 +84,7 @@ QSpinBox {
      <string>12</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
    </widget>
    <widget class="QSpinBox" name="kod2">
@@ -97,7 +97,7 @@ QSpinBox {
      </rect>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
     <property name="minimum">
      <number>1</number>
@@ -116,7 +116,7 @@ QSpinBox {
      </rect>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
     <property name="minimum">
      <number>1</number>
