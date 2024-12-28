@@ -4,5 +4,11 @@
         <file>Images/umut_tarlalari_01.png</file>
         <file>Images/umut_tarlalari_02.png</file>
         <file>Fonts/TopazNew.ttf</file>
+        <file>UmutTarlalari.iconset/icon_16x16.png</file>
+        <file>UmutTarlalari.iconset/icon_32x32.png</file>
+        <file>UmutTarlalari.iconset/icon_64x64.png</file>
+        <file>UmutTarlalari.iconset/icon_128x128.png</file>
+        <file>UmutTarlalari.iconset/icon_256x256.png</file>
+        <file>UmutTarlalari.iconset/icon_512x512.png</file>
     </qresource>
 </RCC>

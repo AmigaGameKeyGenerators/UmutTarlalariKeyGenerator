@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->kod2->setFont(*topaz50Font);
     ui->kod3->setFont(*topaz50Font);
     setFixedSize(this->geometry().width(),this->geometry().height());
+    setWindowIcon(QIcon(":/UmutTarlalari.iconset/icon_512x512.png"));
     ui->kod1->setButtonSymbols(QAbstractSpinBox::NoButtons);
     ui->kod2->setButtonSymbols(QAbstractSpinBox::NoButtons);
     ui->kod3->setButtonSymbols(QAbstractSpinBox::NoButtons);
