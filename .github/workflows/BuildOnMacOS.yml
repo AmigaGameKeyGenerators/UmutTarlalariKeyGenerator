@@ -1,0 +1,59 @@
+name: Build on macOS
+
+on:
+  workflow_run:
+    workflows: ["Create Release"]
+    types:
+      - completed
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: macos-15
+
+    steps:
+      - name: Clone git repository ${{ github.event.workflow_run.head_branch }}
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+          submodules: true
+      - name: Setup macOS Environment
+        run: |
+          brew update
+          brew upgrade
+          brew install qt cmake ninja create-dmg coreutils
+
+      - name: Configure CMake
+        # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+        # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+        run: cmake -B ./build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+      - name: Build
+        # Build your program with the given configuration
+        run: cmake --build ./build --config ${{env.BUILD_TYPE}}
+
+      - name: Deploy
+        run: |
+            macdeployqt ./build/UmutTarlalariKeyGenerator.app
+            mv ./build/UmutTarlalariKeyGenerator.app "./build/Umut Tarlaları Şifre Oluşturucu.app"
+            create-dmg \
+              --volname "Umut Tarlaları Şifre Oluşturucu" \
+              --volicon "Installers/DMG/Umut Tarlalari Disk Icon.icns" \
+              --background "Installers/DMG/UmutTarlalari KeyGen Installer Background.png" \
+              --window-pos 200 120 \
+              --window-size 600 420 \
+              --icon-size 128 \
+              --icon "Umut\ Tarlaları\ Şifre\ Oluşturucu.app" 148 185 \
+              --hide-extension "Umut Tarlaları Şifre Oluşturucu.app" \
+              --app-drop-link 455 184 \
+              "UmutTarlalariKeyGen.dmg" \
+              ./build/Umut\ Tarlaları\ Şifre\ Oluşturucu.app
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            ./Umut\ Tarlaları\ Şifre\ Oluşturucu.dmg
+          tag_name: ${{ github.event.workflow_run.head_branch }}
