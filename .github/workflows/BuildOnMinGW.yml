@@ -70,7 +70,7 @@ jobs:
               clang++ ./DeploymentScripts/DeployOnMSYS2.cpp -o deploy.exe --std=c++20
             fi
             mkdir UmutTarlalariKeyGen
-            cp ./build/UmutTarlalariKeyGen.exe UmutTarlalariKeyGen/
+            cp ./build/UmutTarlalariKeyGenerator.exe UmutTarlalariKeyGen/
             ./deploy.exe "./UmutTarlalariKeyGen/UmutTarlalariKeyGenerator.exe" ./UmutTarlalariKeyGen/
             windeployqt-qt6.exe ./UmutTarlalariKeyGen/UmutTarlalariKeyGenerator.exe
             7z a -r UmutTarlalariKeyGen-Windows-${{matrix.prettyName}}.7z ./UmutTarlalariKeyGen
