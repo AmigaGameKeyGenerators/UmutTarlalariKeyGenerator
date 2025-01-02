@@ -32,7 +32,7 @@ jobs:
 
       - name: Build
         # Build your program with the given configuration
-        run: build --directory=./build
+        run: make --directory=./build
       - name: Deploy
         run: |
             macdeployqt ./build/UmutTarlalariKeyGenerator.app
