@@ -54,5 +54,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            ./Umut\ Tarlaları\ Şifre\ Oluşturucu.dmg
+            ./UmutTarlalariKeyGen.dmg
           tag_name: ${{ github.event.workflow_run.head_branch }}
