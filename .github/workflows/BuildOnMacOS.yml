@@ -32,9 +32,7 @@ jobs:
 
       - name: Build
         # Build your program with the given configuration
-        run: |
-          cmake --build ./build --config ${{env.BUILD_TYPE}}
-          build --directory=./build
+        run: build --directory=./build
       - name: Deploy
         run: |
             macdeployqt ./build/UmutTarlalariKeyGenerator.app
