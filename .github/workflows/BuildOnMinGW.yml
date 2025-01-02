@@ -71,8 +71,8 @@ jobs:
             fi
             mkdir UmutTarlalariKeyGen
             cp ./build/UmutTarlalariKeyGen.exe UmutTarlalariKeyGen/
-            ./deploy.exe "./UmutTarlalariKeyGen/UmutTarlalariKeyGen.exe" ./UmutTarlalariKeyGen/
-            windeployqt-qt6.exe ./UmutTarlalariKeyGen/ModPlug\ Player.exe
+            ./deploy.exe "./UmutTarlalariKeyGen/UmutTarlalariKeyGenerator.exe" ./UmutTarlalariKeyGen/
+            windeployqt-qt6.exe ./UmutTarlalariKeyGen/UmutTarlalariKeyGenerator.exe
             7z a -r UmutTarlalariKeyGen-Windows-${{matrix.prettyName}}.7z ./UmutTarlalariKeyGen
 
       - name: Release
